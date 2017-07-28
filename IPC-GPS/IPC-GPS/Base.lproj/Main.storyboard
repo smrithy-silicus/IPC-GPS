@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dEr-8Q-NCR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic View Controller-->
+        <scene sceneID="XdB-nI-gIC">
+            <objects>
+                <viewController id="dEr-8Q-NCR" customClass="BasicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PcX-m7-CRU"/>
+                        <viewControllerLayoutGuide type="bottom" id="om6-NU-v3R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cMZ-Mv-dtf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmB-5u-zqV">
+                                <rect key="frame" x="154" y="319" width="68" height="30"/>
+                                <state key="normal" title="Send Mail"/>
+                                <connections>
+                                    <action selector="sendMailBtnActn:" destination="dEr-8Q-NCR" eventType="touchUpInside" id="PPw-y0-i5M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-29-gXl">
+                                <rect key="frame" x="167" y="215" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MmB-5u-zqV" firstAttribute="centerX" secondItem="cMZ-Mv-dtf" secondAttribute="centerX" id="2xU-Po-FGU"/>
+                            <constraint firstItem="fI3-29-gXl" firstAttribute="centerX" secondItem="cMZ-Mv-dtf" secondAttribute="centerX" id="J0W-Iv-Vz8"/>
+                            <constraint firstItem="MmB-5u-zqV" firstAttribute="centerY" secondItem="cMZ-Mv-dtf" secondAttribute="centerY" id="Kvo-DP-3TM"/>
+                            <constraint firstItem="fI3-29-gXl" firstAttribute="centerY" secondItem="cMZ-Mv-dtf" secondAttribute="centerY" constant="-108" id="x0d-oo-opG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="speedLbl" destination="fI3-29-gXl" id="txn-Rs-Vwa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ue5-Np-b6S" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
+        </scene>
+    </scenes>
+</document>
